@@ -1,0 +1,13 @@
+# AFTER FIX - raw output of tools/*.py
+
+## python3 -I tools/check_wiki.py
+wiki notes: 7 | raw PDFs: 5 | mechanisms: 4 | quiz questions: 20
+PASS: wiki check
+
+## python3 -I tools/check_slides.py
+slides checked: 15
+PASS: content check
+
+## python3 -I tools/check_site.py
+stats: {'pages': 10, 'slides_walked': 15, 'compare_pairs': 16, 'predictor_combos': 96, 'quiz_max_cards': 20, 'chat_questions': 7}
+PASS: site check

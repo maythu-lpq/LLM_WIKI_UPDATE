@@ -1,0 +1,9 @@
+[
+ {"q": "Why does SN1 cause racemization?", "expect": "sn1.md"},
+ {"q": "What is the stereochemical requirement for E2 elimination?", "expect": "e2.md"},
+ {"q": "Which solvents favor SN2?", "expect": "sn2.md"},
+ {"q": "Why does a 3 degree alcohol react with HBr by SN1?", "expect": "alcohols.md"},
+ {"q": "What happens when an acetylide meets isopropyl bromide?", "expect": "alkynes.md"},
+ {"q": "Why is PBr3 good for avoiding rearrangements?", "expect": "alcohols.md"},
+ {"q": "How do I cook rice?", "expect": "not in the wiki yet"}
+]

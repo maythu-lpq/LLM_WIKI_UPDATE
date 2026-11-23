@@ -1,0 +1,193 @@
+[
+  {
+    "id": 1,
+    "title": "What Happens When Molecules Meet?",
+    "bullets": [
+      "Organic molecules react to change their shapes and jobs.",
+      "A molecule can swap one piece for another piece.",
+      "This swap reaction is called nucleophilic substitution.",
+      "A molecule can also lose pieces to make double bonds.",
+      "This loss reaction is called elimination."
+    ],
+    "source": "wiki/index.md",
+    "notes": "Welcome to organic mechanisms. Today we explore substitution and elimination."
+  },
+  {
+    "id": 2,
+    "title": "Why It Matters: Real Uses of These Reactions",
+    "bullets": [
+      "Alkyl halides are used as solvents, anesthetics, and refrigerants.",
+      "Alcohols are used as fuels, solvents, and antiseptics.",
+      "Chemists use these reactions to build bigger molecules.",
+      "The wrong reaction gives a different product, such as an alkene.",
+      "By the end, you will predict which path wins."
+    ],
+    "source": "wiki/index.md",
+    "notes": "Uses come from wiki/index.md (Why It Matters), fed by Wade sections 6-3 and 10-5."
+  },
+  {
+    "id": 3,
+    "title": "Key Vocabulary: The Reaction Team",
+    "bullets": [
+      "Substrate: The main carbon molecule that undergoes the reaction.",
+      "Leaving Group (LG): A part that departs with bond electrons.",
+      "Nucleophile: An electron-rich atom that attacks a positive carbon.",
+      "Base: A molecule that removes a hydrogen proton from carbon."
+    ],
+    "source": "wiki/index.md",
+    "notes": "These four players appear in all substitution and elimination reactions."
+  },
+  {
+    "id": 4,
+    "title": "Key Vocabulary: Carbon Crowding (1°, 2°, 3°)",
+    "bullets": [
+      "Carbons are named by how many other carbons touch them.",
+      "Primary (1°): The reactive carbon touches only one other carbon.",
+      "Secondary (2°): The reactive carbon touches two other carbons.",
+      "Tertiary (3°): The reactive carbon touches three other carbons.",
+      "Tertiary carbons are very crowded, like a packed room."
+    ],
+    "source": "wiki/sn2.md",
+    "notes": "Steric crowding determines which pathway a molecule can take."
+  },
+  {
+    "id": 5,
+    "title": "SN2: One Step, Backside Attack",
+    "bullets": [
+      "SN2 means Substitution Nucleophilic Bimolecular.",
+      "The reaction takes place in one fast, concerted step.",
+      "The nucleophile attacks the back of the reactive carbon.",
+      "The leaving group gets pushed out at the same time.",
+      "Reaction speed depends on both substrate and nucleophile: Rate = k[substrate][Nu]."
+    ],
+    "source": "wiki/sn2.md",
+    "notes": "Notice there is no waiting and no intermediate in SN2."
+  },
+  {
+    "id": 6,
+    "title": "SN2: The Umbrella Flip and Open Paths",
+    "bullets": [
+      "The backside attack turns the molecule inside out.",
+      "This 3D shape flip is called Walden inversion.",
+      "Crowded carbons block the nucleophile from attacking.",
+      "Speed order: Methyl > Primary (1°) > Secondary (2°). Tertiary (3°) is blocked.",
+      "Polar aprotic solvents like acetone speed up SN2."
+    ],
+    "source": "wiki/sn2.md",
+    "notes": "Like an umbrella blown inside out on a windy day, configuration inverts."
+  },
+  {
+    "id": 7,
+    "title": "SN1: Break First, Attach Later",
+    "bullets": [
+      "SN1 means Substitution Nucleophilic Unimolecular.",
+      "The reaction happens in two separate steps.",
+      "A carbocation is a flat carbon with a positive charge.",
+      "Step 1 (slow): The leaving group leaves and a carbocation forms.",
+      "Reaction speed depends only on the substrate: Rate = k[substrate]."
+    ],
+    "source": "wiki/sn1.md",
+    "notes": "Because ionization is the slow step, nucleophile concentration does not matter."
+  },
+  {
+    "id": 8,
+    "title": "SN1: Flat Intermediate and Mixed Products",
+    "bullets": [
+      "Step 2: The nucleophile attacks the flat carbocation (fast step).",
+      "The nucleophile can attack from the top or the bottom.",
+      "Attacking both faces gives a 50:50 mixture called racemization.",
+      "Tertiary (3°) carbons make the most stable carbocations.",
+      "Polar protic solvents like water help the leaving group depart."
+    ],
+    "source": "wiki/sn1.md",
+    "notes": "Planar geometry removes top and bottom differences, leading to racemization."
+  },
+  {
+    "id": 9,
+    "title": "E2: The One-Step Team Elimination",
+    "bullets": [
+      "E2 means Elimination Bimolecular.",
+      "It forms a carbon-carbon double bond (alkene) in one step.",
+      "A strong base pulls off a neighboring beta-hydrogen.",
+      "At the same time, the leaving group leaves.",
+      "Speed depends on both substrate and base: Rate = k[substrate][base]."
+    ],
+    "source": "wiki/e2.md",
+    "notes": "All three bond changes occur together in a single transition state."
+  },
+  {
+    "id": 10,
+    "title": "E2: The Opposite Line and Base Size",
+    "bullets": [
+      "The hydrogen and the leaving group must sit on opposite sides.",
+      "Anti-periplanar means the two groups sit 180° apart.",
+      "A small base gives the more stable alkene (Zaitsev rule).",
+      "A bulky base gives the less crowded alkene (Hofmann rule).",
+      "Adding heat strongly favors E2 over substitution."
+    ],
+    "source": "wiki/e2.md",
+    "notes": "Bulky bases like KOtBu cannot reach inside, so they pick the outer hydrogen."
+  },
+  {
+    "id": 11,
+    "title": "E1: Two Steps to a Double Bond",
+    "bullets": [
+      "E1 means Elimination Unimolecular.",
+      "Step 1: The leaving group falls off, making a carbocation.",
+      "Step 2: A weak base removes a beta-hydrogen.",
+      "The electrons collapse to form a double bond (alkene).",
+      "E1 usually gives the most substituted alkene (Zaitsev product)."
+    ],
+    "source": "wiki/e1.md",
+    "notes": "E1 shares Step 1 with SN1. High heat favors E1 over SN1."
+  },
+  {
+    "id": 12,
+    "title": "Comparison: The Four Pathways Side by Side",
+    "bullets": [
+      "SN2: 1 step, backside swap, prefers uncrowded 1° carbons.",
+      "SN1: 2 steps, carbocation swap, prefers crowded 3° carbons.",
+      "E2: 1 step, strong base elimination, anti-periplanar 180° geometry.",
+      "E1: 2 steps, weak base elimination, needs high heat."
+    ],
+    "source": "wiki/index.md",
+    "notes": "Remember: '2' mechanisms take 1 step, and '1' mechanisms take 2 steps."
+  },
+  {
+    "id": 13,
+    "title": "How to Choose: The 3-Step Decision Tree",
+    "bullets": [
+      "Step 1: Check carbon crowding (1° favors SN2; 3° is too crowded for SN2).",
+      "Step 2: Check reagent strength (Strong = SN2 or E2; Weak = SN1 or E1).",
+      "Step 3: Check temperature (high heat favors elimination).",
+      "Follow these three steps to predict the correct product."
+    ],
+    "source": "wiki/index.md",
+    "notes": "This simple 3-step logic solves almost every introductory exam problem."
+  },
+  {
+    "id": 14,
+    "title": "Practice: Test Your Prediction Skills",
+    "bullets": [
+      "1-bromobutane (1°) with strong cyanide nucleophile → SN2 substitution.",
+      "2-bromo-2-methylpropane (3°) with strong ethoxide base plus heat → E2 alkene.",
+      "2-bromo-2-methylpropane (3°) with neutral water at room temp → SN1 alcohol.",
+      "Notice how temperature and reagent strength steer the outcome."
+    ],
+    "source": "wiki/sn2.md",
+    "notes": "Work through these examples using the 3-step decision tree."
+  },
+  {
+    "id": 15,
+    "title": "Summary: Your Reaction Cheat Sheet",
+    "bullets": [
+      "Bimolecular (2) reactions happen in a single concerted step.",
+      "Unimolecular (1) reactions form a flat carbocation intermediate.",
+      "Strong bases favor E2, while weak reagents allow carbocations.",
+      "High temperature acts as a switch to produce alkenes.",
+      "You now understand SN1, SN2, E1, and E2 mechanisms!"
+    ],
+    "source": "wiki/index.md",
+    "notes": "Congratulations! You have mastered the core mechanisms of organic chemistry."
+  }
+]

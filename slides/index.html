@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding SN1, SN2, E1, and E2 — Teaching Presentation</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header>
+    <div class="nav-container">
+      <a href="../index.html" class="brand">
+        <span>⚗️ O-Chem Mechanism Hub</span>
+        <span class="brand-badge">Teaching Deck</span>
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/sn1.html">S<sub>N</sub>1</a></li>
+          <li><a href="../pages/sn2.html">S<sub>N</sub>2</a></li>
+          <li><a href="../pages/e1.html">E1</a></li>
+          <li><a href="../pages/e2.html">E2</a></li>
+          <li><a href="../pages/predictor.html">Predictor</a></li>
+          <li><a href="../pages/quiz.html">Quiz</a></li>
+          <li><a href="../pages/compare.html">Compare</a></li>
+          <li><a href="../pages/chat.html">Q&amp;A Chat</a></li>
+          <li><a href="index.html" class="active">Slides</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a> &rsaquo; <span>Learning Hub</span> &rsaquo; <span>Teaching Presentation</span>
+    </div>
+
+    <div class="header-box">
+      <div class="source-cite">📖 Pedagogical Standard &bull; AGENTS.md Section 10 &amp; 11 &bull; Grounded in <code>wiki/*.md</code></div>
+      <h1>Understanding S<sub>N</sub>1, S<sub>N</sub>2, E1, and E2</h1>
+      <p class="lead">An introductory step-by-step visual presentation for students new to organic chemistry mechanisms.</p>
+    </div>
+
+    <!-- Slide Deck Container -->
+    <div class="slide-deck">
+      <div class="slide-card" id="slide-card">
+        <!-- Progress Bar -->
+        <div class="slide-progress-track">
+          <div class="slide-progress-bar" id="slide-progress-bar" style="width: 6.66%;"></div>
+        </div>
+
+        <!-- Meta Bar (Slide Number & Wiki Source) -->
+        <div class="slide-meta-bar">
+          <span class="slide-number-badge" id="slide-counter">Slide 1 / 15</span>
+          <a href="../wiki/index.md" class="slide-source-tag" id="slide-source-link" target="_blank">
+            📖 Source: <span id="slide-source-text">wiki/index.md</span>
+          </a>
+        </div>
+
+        <!-- Slide Body -->
+        <div class="slide-body">
+          <h2 class="slide-title-display" id="slide-title">Loading presentation...</h2>
+          <ul class="slide-bullet-list" id="slide-bullets">
+            <li class="slide-bullet-item">
+              <span class="slide-bullet-icon">✦</span>
+              <span>Loading slides from content.json...</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Teacher's Notes Box -->
+        <div class="slide-notes-drawer" id="slide-notes-container">
+          <div class="slide-notes-label">💡 Teacher's Note</div>
+          <div id="slide-notes-text">Notes will display here.</div>
+        </div>
+
+        <!-- Controls Bar -->
+        <div class="slide-controls-bar">
+          <button class="slide-btn slide-btn-outline" id="prev-btn" onclick="prevSlide()" disabled>
+            &larr; Previous
+          </button>
+
+          <div class="slide-dots-container" id="slide-dots">
+            <!-- 15 Dots generated via JS -->
+          </div>
+
+          <button class="slide-btn" id="next-btn" onclick="nextSlide()">
+            Next &rarr;
+          </button>
+        </div>
+      </div>
+
+      <!-- Keyboard Hint -->
+      <div class="slide-keyboard-hint">
+        Use <kbd>&larr;</kbd> and <kbd>&rarr;</kbd> keyboard arrow keys or Spacebar to navigate between slides.
+      </div>
+    </div>
+
+    <!-- Presentation Structure Card -->
+    <section class="card">
+      <h2>Teaching Structure &amp; Methodology</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-top: 1rem;">
+        <div style="background: var(--surface-alt); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border);">
+          <h4 style="color: var(--primary); margin-bottom: 0.35rem;">1. Beginner Friendly</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">
+            Written in simple English with short sentences (≤ 15 words) and plain analogies to ensure concepts are clear before formulas appear.
+          </p>
+        </div>
+        <div style="background: var(--surface-alt); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border);">
+          <h4 style="color: var(--primary); margin-bottom: 0.35rem;">2. Structured Flow</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">
+            Hook &rarr; Why it matters &rarr; Key vocabulary &rarr; S<sub>N</sub>2 &rarr; S<sub>N</sub>1 &rarr; E2 &rarr; E1 &rarr; Comparison &rarr; Decision Tree &rarr; Practice &rarr; Summary.
+          </p>
+        </div>
+        <div style="background: var(--surface-alt); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border);">
+          <h4 style="color: var(--primary); margin-bottom: 0.35rem;">3. Grounded in Wiki</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">
+            Every single slide references a verified <code>wiki/*.md</code> source note and strictly adheres to the knowledge base without hallucination.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>Organic Chemistry Reaction Mechanism Wiki &bull; Teaching Presentation</p>
+      <p style="margin-top: 0.5rem; font-size: 0.8rem;">
+        <a href="../index.html">Home</a> &bull;
+        <a href="../pages/sn1.html">S<sub>N</sub>1</a> &bull;
+        <a href="../pages/sn2.html">S<sub>N</sub>2</a> &bull;
+        <a href="../pages/e1.html">E1</a> &bull;
+        <a href="../pages/e2.html">E2</a> &bull;
+        <a href="../pages/predictor.html">Predictor</a> &bull;
+        <a href="../pages/quiz.html">Quiz</a> &bull;
+        <a href="../pages/compare.html">Compare</a> &bull;
+        <a href="../pages/chat.html">Q&amp;A Chat</a> &bull;
+        <a href="index.html">Slides</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../assets/app.js"></script>
+  <script>
+    // Embedded Slide Data Fallback (ensures slides work on local file:/// and GitHub Pages)
+    const FALLBACK_SLIDES = [
+          {
+                "id": 1,
+                "title": "What Happens When Molecules Meet?",
+                "bullets": [
+                      "Organic molecules react to change their shapes and jobs.",
+                      "A molecule can swap one piece for another piece.",
+                      "This swap reaction is called nucleophilic substitution.",
+                      "A molecule can also lose pieces to make double bonds.",
+                      "This loss reaction is called elimination."
+                ],
+                "source": "wiki/index.md",
+                "notes": "Welcome to organic mechanisms. Today we explore substitution and elimination."
+          },
+          {
+                "id": 2,
+                "title": "Why It Matters: Real Uses of These Reactions",
+                "bullets": [
+                      "Alkyl halides are used as solvents, anesthetics, and refrigerants.",
+                      "Alcohols are used as fuels, solvents, and antiseptics.",
+                      "Chemists use these reactions to build bigger molecules.",
+                      "The wrong reaction gives a different product, such as an alkene.",
+                      "By the end, you will predict which path wins."
+                ],
+                "source": "wiki/index.md",
+                "notes": "Uses come from wiki/index.md (Why It Matters), fed by Wade sections 6-3 and 10-5."
+          },
+          {
+                "id": 3,
+                "title": "Key Vocabulary: The Reaction Team",
+                "bullets": [
+                      "Substrate: The main carbon molecule that undergoes the reaction.",
+                      "Leaving Group (LG): A part that departs with bond electrons.",
+                      "Nucleophile: An electron-rich atom that attacks a positive carbon.",
+                      "Base: A molecule that removes a hydrogen proton from carbon."
+                ],
+                "source": "wiki/index.md",
+                "notes": "These four players appear in all substitution and elimination reactions."
+          },
+          {
+                "id": 4,
+                "title": "Key Vocabulary: Carbon Crowding (1°, 2°, 3°)",
+                "bullets": [
+                      "Carbons are named by how many other carbons touch them.",
+                      "Primary (1°): The reactive carbon touches only one other carbon.",
+                      "Secondary (2°): The reactive carbon touches two other carbons.",
+                      "Tertiary (3°): The reactive carbon touches three other carbons.",
+                      "Tertiary carbons are very crowded, like a packed room."
+                ],
+                "source": "wiki/sn2.md",
+                "notes": "Steric crowding determines which pathway a molecule can take."
+          },
+          {
+                "id": 5,
+                "title": "SN2: One Step, Backside Attack",
+                "bullets": [
+                      "SN2 means Substitution Nucleophilic Bimolecular.",
+                      "The reaction takes place in one fast, concerted step.",
+                      "The nucleophile attacks the back of the reactive carbon.",
+                      "The leaving group gets pushed out at the same time.",
+                      "Reaction speed depends on both substrate and nucleophile: Rate = k[substrate][Nu]."
+                ],
+                "source": "wiki/sn2.md",
+                "notes": "Notice there is no waiting and no intermediate in SN2."
+          },
+          {
+                "id": 6,
+                "title": "SN2: The Umbrella Flip and Open Paths",
+                "bullets": [
+                      "The backside attack turns the molecule inside out.",
+                      "This 3D shape flip is called Walden inversion.",
+                      "Crowded carbons block the nucleophile from attacking.",
+                      "Speed order: Methyl > Primary (1°) > Secondary (2°). Tertiary (3°) is blocked.",
+                      "Polar aprotic solvents like acetone speed up SN2."
+                ],
+                "source": "wiki/sn2.md",
+                "notes": "Like an umbrella blown inside out on a windy day, configuration inverts."
+          },
+          {
+                "id": 7,
+                "title": "SN1: Break First, Attach Later",
+                "bullets": [
+                      "SN1 means Substitution Nucleophilic Unimolecular.",
+                      "The reaction happens in two separate steps.",
+                      "A carbocation is a flat carbon with a positive charge.",
+                      "Step 1 (slow): The leaving group leaves and a carbocation forms.",
+                      "Reaction speed depends only on the substrate: Rate = k[substrate]."
+                ],
+                "source": "wiki/sn1.md",
+                "notes": "Because ionization is the slow step, nucleophile concentration does not matter."
+          },
+          {
+                "id": 8,
+                "title": "SN1: Flat Intermediate and Mixed Products",
+                "bullets": [
+                      "Step 2: The nucleophile attacks the flat carbocation (fast step).",
+                      "The nucleophile can attack from the top or the bottom.",
+                      "Attacking both faces gives a 50:50 mixture called racemization.",
+                      "Tertiary (3°) carbons make the most stable carbocations.",
+                      "Polar protic solvents like water help the leaving group depart."
+                ],
+                "source": "wiki/sn1.md",
+                "notes": "Planar geometry removes top and bottom differences, leading to racemization."
+          },
+          {
+                "id": 9,
+                "title": "E2: The One-Step Team Elimination",
+                "bullets": [
+                      "E2 means Elimination Bimolecular.",
+                      "It forms a carbon-carbon double bond (alkene) in one step.",
+                      "A strong base pulls off a neighboring beta-hydrogen.",
+                      "At the same time, the leaving group leaves.",
+                      "Speed depends on both substrate and base: Rate = k[substrate][base]."
+                ],
+                "source": "wiki/e2.md",
+                "notes": "All three bond changes occur together in a single transition state."
+          },
+          {
+                "id": 10,
+                "title": "E2: The Opposite Line and Base Size",
+                "bullets": [
+                      "The hydrogen and the leaving group must sit on opposite sides.",
+                      "Anti-periplanar means the two groups sit 180° apart.",
+                      "A small base gives the more stable alkene (Zaitsev rule).",
+                      "A bulky base gives the less crowded alkene (Hofmann rule).",
+                      "Adding heat strongly favors E2 over substitution."
+                ],
+                "source": "wiki/e2.md",
+                "notes": "Bulky bases like KOtBu cannot reach inside, so they pick the outer hydrogen."
+          },
+          {
+                "id": 11,
+                "title": "E1: Two Steps to a Double Bond",
+                "bullets": [
+                      "E1 means Elimination Unimolecular.",
+                      "Step 1: The leaving group falls off, making a carbocation.",
+                      "Step 2: A weak base removes a beta-hydrogen.",
+                      "The electrons collapse to form a double bond (alkene).",
+                      "E1 usually gives the most substituted alkene (Zaitsev product)."
+                ],
+                "source": "wiki/e1.md",
+                "notes": "E1 shares Step 1 with SN1. High heat favors E1 over SN1."
+          },
+          {
+                "id": 12,
+                "title": "Comparison: The Four Pathways Side by Side",
+                "bullets": [
+                      "SN2: 1 step, backside swap, prefers uncrowded 1° carbons.",
+                      "SN1: 2 steps, carbocation swap, prefers crowded 3° carbons.",
+                      "E2: 1 step, strong base elimination, anti-periplanar 180° geometry.",
+                      "E1: 2 steps, weak base elimination, needs high heat."
+                ],
+                "source": "wiki/index.md",
+                "notes": "Remember: '2' mechanisms take 1 step, and '1' mechanisms take 2 steps."
+          },
+          {
+                "id": 13,
+                "title": "How to Choose: The 3-Step Decision Tree",
+                "bullets": [
+                      "Step 1: Check carbon crowding (1° favors SN2; 3° is too crowded for SN2).",
+                      "Step 2: Check reagent strength (Strong = SN2 or E2; Weak = SN1 or E1).",
+                      "Step 3: Check temperature (high heat favors elimination).",
+                      "Follow these three steps to predict the correct product."
+                ],
+                "source": "wiki/index.md",
+                "notes": "This simple 3-step logic solves almost every introductory exam problem."
+          },
+          {
+                "id": 14,
+                "title": "Practice: Test Your Prediction Skills",
+                "bullets": [
+                      "1-bromobutane (1°) with strong cyanide nucleophile → SN2 substitution.",
+                      "2-bromo-2-methylpropane (3°) with strong ethoxide base plus heat → E2 alkene.",
+                      "2-bromo-2-methylpropane (3°) with neutral water at room temp → SN1 alcohol.",
+                      "Notice how temperature and reagent strength steer the outcome."
+                ],
+                "source": "wiki/sn2.md",
+                "notes": "Work through these examples using the 3-step decision tree."
+          },
+          {
+                "id": 15,
+                "title": "Summary: Your Reaction Cheat Sheet",
+                "bullets": [
+                      "Bimolecular (2) reactions happen in a single concerted step.",
+                      "Unimolecular (1) reactions form a flat carbocation intermediate.",
+                      "Strong bases favor E2, while weak reagents allow carbocations.",
+                      "High temperature acts as a switch to produce alkenes.",
+                      "You now understand SN1, SN2, E1, and E2 mechanisms!"
+                ],
+                "source": "wiki/index.md",
+                "notes": "Congratulations! You have mastered the core mechanisms of organic chemistry."
+          }
+    ];
+
+    let slidesData = FALLBACK_SLIDES;
+    let currentSlide = 0;
+
+    // Format text with chemical subscripts & superscripts
+    function formatChemicalText(text) {
+      if (!text) return '';
+      return text
+        .replace(/\bSN1\b/g, 'S<sub>N</sub>1')
+        .replace(/\bSN2\b/g, 'S<sub>N</sub>2')
+        .replace(/\b1°\b/g, '1&deg;')
+        .replace(/\b2°\b/g, '2&deg;')
+        .replace(/\b3°\b/g, '3&deg;')
+        .replace(/\bbeta-hydrogen\b/g, '&beta;-hydrogen')
+        .replace(/\bβ-H\b/g, '&beta;-H')
+        .replace(/\b180°\b/g, '180&deg;');
+    }
+
+    // Render dots container
+    function initDots() {
+      const container = document.getElementById('slide-dots');
+      container.innerHTML = '';
+      slidesData.forEach((_, idx) => {
+        const dot = document.createElement('div');
+        dot.className = `slide-dot ${idx === currentSlide ? 'active' : ''}`;
+        dot.title = `Jump to Slide ${idx + 1}`;
+        dot.onclick = () => goToSlide(idx);
+        container.appendChild(dot);
+      });
+    }
+
+    // Render active slide
+    function renderSlide() {
+      const slide = slidesData[currentSlide];
+      const total = slidesData.length;
+
+      // Update Meta
+      document.getElementById('slide-counter').textContent = `Slide ${currentSlide + 1} / ${total}`;
+      document.getElementById('slide-source-text').textContent = slide.source;
+      document.getElementById('slide-source-link').href = `../${slide.source}`;
+
+      // Update Progress Bar
+      const pct = ((currentSlide + 1) / total) * 100;
+      document.getElementById('slide-progress-bar').style.width = `${pct}%`;
+
+      // Update Title
+      document.getElementById('slide-title').innerHTML = formatChemicalText(slide.title);
+
+      // Update Bullets
+      const bulletContainer = document.getElementById('slide-bullets');
+      bulletContainer.innerHTML = '';
+      slide.bullets.forEach(bullet => {
+        const li = document.createElement('li');
+        li.className = 'slide-bullet-item';
+        li.innerHTML = `<span class="slide-bullet-icon">✦</span><span>${formatChemicalText(bullet)}</span>`;
+        bulletContainer.appendChild(li);
+      });
+
+      // Update Notes
+      document.getElementById('slide-notes-text').textContent = slide.notes || 'No notes for this slide.';
+
+      // Update Controls State
+      document.getElementById('prev-btn').disabled = (currentSlide === 0);
+      document.getElementById('next-btn').disabled = (currentSlide === total - 1);
+      document.getElementById('next-btn').textContent = (currentSlide === total - 1) ? 'Finished! 🎉' : 'Next →';
+
+      // Update Dots
+      const dots = document.querySelectorAll('.slide-dot');
+      dots.forEach((dot, idx) => {
+        dot.classList.toggle('active', idx === currentSlide);
+      });
+    }
+
+    function prevSlide() {
+      if (currentSlide > 0) {
+        currentSlide--;
+        renderSlide();
+      }
+    }
+
+    function nextSlide() {
+      if (currentSlide < slidesData.length - 1) {
+        currentSlide++;
+        renderSlide();
+      }
+    }
+
+    function goToSlide(idx) {
+      if (idx >= 0 && idx < slidesData.length) {
+        currentSlide = idx;
+        renderSlide();
+      }
+    }
+
+    // Keyboard Navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        prevSlide();
+      } else if (e.key === 'ArrowRight' || e.key === ' ') {
+        e.preventDefault();
+        nextSlide();
+      }
+    });
+
+    // Initialize slides
+    async function loadSlides() {
+      try {
+        const res = await fetch('content.json');
+        if (res.ok) {
+          const data = await res.json();
+          if (Array.isArray(data) && data.length > 0) {
+            slidesData = data;
+          }
+        }
+      } catch (err) {
+        console.log('Using embedded fallback slide dataset.');
+      }
+      initDots();
+      renderSlide();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initTheme();
+      loadSlides();
+    });
+  </script>
+</body>
+</html>

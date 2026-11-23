@@ -1,0 +1,49 @@
+# AUDIT of the first (Antigravity) run - raw output of tools/*.py, run BEFORE any fix
+
+## python3 -I tools/check_wiki.py
+wiki notes: 4 | raw PDFs: 5 | mechanisms: 4 | quiz questions: 20
+FAIL (9 problems)
+ - [sources] raw/ch 10.pdf is NOT logged in wiki/sources.md
+ - [sources] raw/ch 11.pdf is NOT logged in wiki/sources.md
+ - [sources] raw/ch 8.pdf is NOT logged in wiki/sources.md
+ - [sources] raw/ch 9.pdf is NOT logged in wiki/sources.md
+ - [sources] sources.md says 1 files but raw/ has 5
+ - [sources] raw/ch 10.pdf feeds no wiki page
+ - [sources] raw/ch 11.pdf feeds no wiki page
+ - [sources] raw/ch 8.pdf feeds no wiki page
+ - [sources] raw/ch 9.pdf feeds no wiki page
+
+## python3 -I tools/check_slides.py
+slides checked: 15
+FAIL (7 problems)
+ - [overclaim] slide 2: absolute word 'every time' in 'Learning the rules helps you pick the right reaction every t...'
+ - [overclaim] slide 6: absolute word 'never' in 'Speed order: Methyl > Primary (1°) > Secondary (2°) >>> Tert...'
+ - [overclaim] slide 11: absolute word 'always' in 'E1 always gives the most substituted alkene (Zaitsev product...'
+ - [overclaim] slide 13: absolute word 'never' in 'Step 1: Check carbon crowding (1° does SN2, 3° never does SN...'
+ - [overclaim] slide 13: absolute word 'always' in 'Step 3: Check temperature (High heat always promotes elimina...'
+ - [order] term 'carbocation' first appears on slide 7 without being explained there
+ - [order] term 'anti-periplanar' first appears on slide 10 without being explained there
+
+## python3 -I tools/check_site.py
+stats: {'pages': 10, 'slides_walked': 15, 'compare_pairs': 16, 'predictor_combos': 96, 'quiz_max_cards': 20, 'chat_questions': 1}
+FAIL (20 problems)
+ - [text] pages/compare.html @1280px shows 'undefined'
+ - [text] pages/compare.html @390px shows 'undefined'
+ - [overflow] pages/compare.html @390px has horizontal overflow
+ - [overflow] pages/e2.html @390px has horizontal overflow
+ - [compare] sn1 vs sn1 shows 'undefined'
+ - [compare] sn1 vs sn2 shows 'undefined'
+ - [compare] sn1 vs e1 shows 'undefined'
+ - [compare] sn1 vs e2 shows 'undefined'
+ - [compare] sn2 vs sn1 shows 'undefined'
+ - [compare] sn2 vs sn2 shows 'undefined'
+ - [compare] sn2 vs e1 shows 'undefined'
+ - [compare] sn2 vs e2 shows 'undefined'
+ - [compare] e1 vs sn1 shows 'undefined'
+ - [compare] e1 vs sn2 shows 'undefined'
+ - [compare] e1 vs e1 shows 'undefined'
+ - [compare] e1 vs e2 shows 'undefined'
+ - [compare] e2 vs sn1 shows 'undefined'
+ - [compare] e2 vs sn2 shows 'undefined'
+ - [compare] e2 vs e1 shows 'undefined'
+ - [compare] e2 vs e2 shows 'undefined'
